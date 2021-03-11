@@ -1,0 +1,202 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font: 11pt "Arial";
+ 
+}
+.info {
+  line-height: 0;
+  font-size: 8pt;
+  text-align: center;
+}
+
+h2{
+    position: relative; 
+}
+.summary h2:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #242424;
+  width: 86%;
+  margin-left: 0px;
+  top: 80%;
+}
+.summary p{
+    margin-top: -0.3cm;
+    padding: 0;
+    line-height: auto;
+    
+}
+.skills{
+    line-height: 0.6cm;
+    margin-top: -0cm;
+}
+.skills h2:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #242424;
+    width: 91.5%;
+    margin-left: 0px;
+    top: 78%;
+}
+
+.lists ul{
+    margin-top: 0.1cm;
+    width: 33%;
+    float: left; 
+}
+.lists{
+    margin-top:  -0.5cm;
+}
+.education{
+    margin-top: 1cm;   
+}
+.education h2:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #242424;
+    width: 85%;
+    margin-left: 0px;
+    top: 92%;
+}
+.master{
+    margin-top: -0.8cm;
+    display:inline-block;
+    width:100%;
+}
+.education h4{
+    float:left;
+}
+.education h5{
+    float: right;
+}
+.education p{
+  margin-top: -0.5cm;
+  
+}
+.bachelor{
+  margin-top: -0.8cm;
+  display:inline-block;
+  width:100%;
+}
+.project{
+  margin-top:0cm;
+}
+.project h2:after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #242424;
+  width: 90%;
+  margin-left: 0px;
+  top: 80%;
+}
+.project p{
+  margin-top: -0.4cm;
+  line-height: 0.5cm;
+}
+.project ul{
+  margin-top:-0.3cm;
+}
+
+.experience h2:after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #242424;
+  width: 84%;
+  margin-left: 0px;
+  top: 80%;
+}
+.experience {
+  margin-top: -0cm;
+}
+.tt{
+  margin-top: -1cm;
+  display:inline-block;
+  width:100%;
+}
+.tt h4{
+  float:left;
+}
+.tt h5{
+  float: right;
+}
+.experience ul{
+  margin-top: -0.4cm;
+}
+.accomplishments{
+  margin-top: 0cm;
+}
+.accomplishments p{
+  margin-top: -0.4cm;
+}
+.accomplishments h2:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #242424;
+    width: 73.5%;
+    margin-left: 0px;
+    top: 80%;
+}
+
+ fff{
+  display:inline-block;
+  background-color: khaki;
+  font-weight: bold;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 1cm;
+  margin: 1cm auto;
+  /*border: 1px #D3D3D3 solid;*/
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.page h1{
+    text-align: center;
+    line-height: 0.3;
+}
+
+.subpage {
+  padding: 1cm;
+  /* border: 5px red solid;*/
+  height: 256mm;
+  /*outline: 2cm #FFEAEA solid;*/
+}
+.subpage h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
