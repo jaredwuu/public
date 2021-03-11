@@ -12,17 +12,30 @@ body {
   text-align: center;
 }
 
-h2{
+/*h2{
     position: relative; 
-}
-.summary h2:after {
+}*/
+/*.summary h2:after {
   position: absolute;
+  flex:1;
   content: "";
   height: 2px;
   background-color: #242424;
   width: 86%;
   margin-left: 0px;
   top: 80%;
+}*/
+ h2 {
+  display: flex;
+  align-items:baseline;
+}
+
+ h2::after {
+  content: '';
+  flex: 1;
+  margin-left: 0rem;
+  height: 2px;
+  background-color: #000;
 }
 .summary p{
     margin-top: -0.3cm;
@@ -34,7 +47,7 @@ h2{
     line-height: 0.6cm;
     margin-top: -0cm;
 }
-.skills h2:after{
+/*.skills h2:after{
     position: absolute;
     content: "";
     height: 2px;
@@ -42,7 +55,7 @@ h2{
     width: 91.5%;
     margin-left: 0px;
     top: 78%;
-}
+}*/
 
 .lists ul{
     margin-top: 0.1cm;
@@ -52,10 +65,11 @@ h2{
 .lists{
     margin-top:  -0.5cm;
 }
-.education{
-    margin-top: 1cm;   
+.education h2{
+    float:left;
+    margin-top: 0cm;   
 }
-.education h2:after{
+/*.education h2:after{
     position: absolute;
     content: "";
     height: 2px;
@@ -63,7 +77,8 @@ h2{
     width: 85%;
     margin-left: 0px;
     top: 92%;
-}
+}*/
+
 .master{
     margin-top: -0.8cm;
     display:inline-block;
@@ -87,7 +102,7 @@ h2{
 .project{
   margin-top:0cm;
 }
-.project h2:after{
+/*.project h2:after{
   position: absolute;
   content: "";
   height: 2px;
@@ -95,16 +110,16 @@ h2{
   width: 90%;
   margin-left: 0px;
   top: 80%;
-}
+}*/
 .project p{
-  margin-top: -0.4cm;
+  margin-top: -0.3cm;
   line-height: 0.5cm;
 }
 .project ul{
   margin-top:-0.3cm;
 }
 
-.experience h2:after{
+/*.experience h2:after{
   position: absolute;
   content: "";
   height: 2px;
@@ -112,7 +127,7 @@ h2{
   width: 84%;
   margin-left: 0px;
   top: 80%;
-}
+}*/
 .experience {
   margin-top: -0cm;
 }
@@ -136,7 +151,7 @@ h2{
 .accomplishments p{
   margin-top: -0.4cm;
 }
-.accomplishments h2:after{
+/*.accomplishments h2:after{
     position: absolute;
     content: "";
     height: 2px;
@@ -144,15 +159,22 @@ h2{
     width: 73.5%;
     margin-left: 0px;
     top: 80%;
-}
+}*/
 
- fff{
+.footer{
   display:inline-block;
-  background-color: khaki;
-  font-weight: bold;
+  margin-top: 1cm;
+  width:100%;
+  
 }
-
-
+.footer p1{
+  float:left;
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+.footer p2{
+  float:right;
+}
 
 * {
   box-sizing: border-box;
