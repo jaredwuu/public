@@ -1,0 +1,182 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font: 12pt "Arial";
+ 
+}
+.info {
+  line-height: 0;
+  font-size: 8pt;
+  text-align: center;
+}
+
+/*h2{
+    position: relative; 
+}*/
+/*.summary h2:after {
+  position: absolute;
+  flex:1;
+  content: "";
+  height: 2px;
+  background-color: #242424;
+  width: 86%;
+  margin-left: 0px;
+  top: 80%;
+}*/
+ h2 {
+  display: flex;
+  align-items:baseline;
+}
+
+ h2::after {
+  content: '';
+  flex: 1;
+  margin-left: 0rem;
+  height: 2px;
+  background-color: #000;
+}
+.summary p{
+    margin-top: -0.3cm;
+    padding: 0;
+    line-height: auto;
+    
+}
+.skills{
+    line-height: 0.6cm;
+    margin-top: -0cm;
+}
+
+.lists ul{
+    margin-top: 0.1cm;
+    width: 33%;
+    float: left; 
+}
+.lists{
+    margin-top:  -0.5cm;
+}
+.education h2{
+    float:left;
+    margin-top: 0cm;   
+}
+
+
+.master{
+    margin-top: -0.6cm;
+    display:inline-block;
+    width:100%;
+}
+.education h4{
+    float:left;
+}
+.education h5{
+    float: right;
+}
+.education p{
+  margin-top: -0.5cm;
+  
+}
+.bachelor{
+  margin-top: -0.5cm;
+  display:inline-block;
+  width:100%;
+}
+
+.project{
+  margin-top:-0.2cm;
+}
+
+.project p{
+  margin-top: 0cm;
+  line-height: 0.5cm;
+}
+.project ul{
+  margin-top:-0.3cm;
+}
+
+.experience {
+  margin-top: -0cm;
+}
+.tt{
+  margin-top: -1cm;
+  display:inline-block;
+  width:100%;
+}
+.tt h4{
+  float:left;
+}
+.tt h5{
+  float: right;
+}
+.experience ul{
+  margin-top: -0.4cm;
+}
+.accomplishments{
+  margin-top: 0cm;
+}
+.accomplishments p{
+  margin-top: -0.4cm;
+}
+
+.footer{
+  display:inline-block;
+  margin-top: 1cm;
+  width:100%;
+  
+}
+.footer p1{
+  float:left;
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+.footer p2{
+  float:right;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 1cm;
+  margin: 1cm auto;
+  /*border: 1px #D3D3D3 solid;*/
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.page h1{
+    text-align: center;
+    line-height: 0.3;
+}
+
+.subpage {
+  padding: 1cm;
+  /* border: 5px red solid;*/
+  height: 256mm;
+  /*outline: 2cm #FFEAEA solid;*/
+}
+.subpage h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
